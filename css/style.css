@@ -1,0 +1,549 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #343434;
+    line-height: 1.42857143;
+}
+/* home */
+.navbar{
+    z-index: 99999;
+
+}
+.navbar .navbar-brand{
+    padding-top: 20px !important;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-nav .nav-item{
+    font-size: 14px;
+    margin: 25px 20px 0;
+}
+.navbar-nav .nav-link{
+    color: #fff;
+    background-color: transparent !important;
+    padding: 0.5rem 0 0 !important;
+}
+.navbar-nav .nav-link.active{
+    color:#fff ;
+    position: relative;
+}
+.navbar-nav .nav-link.active::after{
+    content: " ";
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#Home{
+    background-image: url(../img/bg.jpg);
+    background-position: 0 0;
+    background-size: cover;
+}
+#Home .layer{
+    background-color: rgba(0, 0, 0, 0.65);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+.home-content{
+    color: rgba(255,255,255,1);
+}
+.home-content h5{
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+.home-content h1 span{
+    font-weight: 200;
+    padding: 0.2rem 0;
+}
+.home-content h1{
+    line-height: 1.2;
+    font-size: 3.5rem;
+    transform: translateX(-13%);
+    position: relative;
+}
+.home-content h1::after{
+    content: "Larry Daniels|";
+    position: absolute;
+    left: 56%;
+    animation-name: typing;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing {
+    0%{content: "Larry Daniels|";}
+    2.4%{content: "Larry Daniels|";}
+    4%{content: "Larry Daniel|";}
+    5.6%{content: "Larry Danie|";}
+    7.2%{content: "Larry Dani|";}
+    8.8%{content: "Larry Dan|";}
+    10.4%{content: "Larry Da|";}
+    12%{content: "Larry D|";}
+    13.6%{content: "Larry|";}
+    15.2%{content: "Larr|";}
+    16.8%{content: "Lar|";}
+    18.4%{content: "La|";}
+    20%{content: "L|";}
+    21.6%{content: "|";}
+    
+    23.2%{content: "D|";}
+    24.8%{content: "De|";}
+    26.4%{content: "Dev|";}
+    28%{content: "Deve|";}
+    29.6%{content: "Devel|";}
+    31.2%{content: "Develo|";}
+    32.8%{content: "Develop|";}
+    34.4%{content: "Develope|";}
+    36.8%{content: "Developer|";}
+    38.4%{content: "Develope|";}
+    40%{content: "Develop|";}
+    41.6%{content: "Develo|";}
+    43.2%{content: "Devel|";}
+    44.8%{content: "Deve|";}
+    46.4%{content: "Dev|";}
+    48%{content: "De|";}
+    49.6%{content: "D|";}
+    51.2%{content: "|";}
+
+    52.8%{content: "D|";}
+    54.4%{content: "De|";}
+    56%{content: "Des|";}
+    57.6%{content: "Desi|";}
+    59.2%{content: "Desig|";}
+    60.8%{content: "Design|";}
+    62.4%{content: "Designe|";}
+    64.8%{content: "Designer|";}
+    66.4%{content: "Designe|";}
+    68%{content: "Design|";}
+    69.6%{content: "Desig|";}
+    71.2%{content: "Desi|";}
+    73%{content: "Des|";}
+    74.6%{content: "De|";}
+    76.2%{content: "D|";}
+    78%{content: "|";}
+
+    79.8%{content: "L|";}
+    81.6%{content: "La|";}
+    83.2%{content: "Lar|";}
+    84.8%{content: "Larr|";}
+    86.4%{content: "Larry|";}
+    88%{content: "Larry D|";}
+    89.6%{content: "Larry Da|";}
+    91.6%{content: "Larry Dan|";}
+    94%{content: "Larry Dani|";}
+    96%{content: "Larry Danie|";}
+    98%{content: "Larry Daniel|";}
+    100%{content: "Larry Daniels|";}
+}
+.home-icons{
+    margin-top: 30px;
+}
+.home-icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.home-icons span{
+    padding: 7px 11px;
+    font-size: 14px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+/* about */
+#About{
+    padding: 100px 0;
+    padding-bottom: 70px;
+}
+.about-img{
+    padding: 0 0 0 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.about-img-dots{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../img/dots.png);
+    z-index: -1;
+}
+ .about-content .about-title{
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.about-content .info{
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.about-content p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.skills{
+    margin-top: 30px;
+}
+.skills .progress{
+    background: #f7f7f7;
+    box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) inset;
+}
+.skills .progress-bar{
+    background-color: #1c1c1c ;
+    animation-name: moving;
+    animation-duration: 2s;
+}
+@keyframes moving {
+    0%{transform: translateX(-20%);}
+    100%{transform: translateX(0);}
+    
+}
+.skills .progress-bar h6{
+    font-size: 13px;
+    color: #fff;
+    margin: 0;
+}
+.about-button .btn{
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all .5s;
+}
+.about-button .btn-1{
+    background: #1c1c1c;
+    color: #eee;
+}
+.about-button .btn-1:hover{
+    background:#eee;
+    color: #1c1c1c;
+}
+.about-button .btn-2:hover{
+    background: #1c1c1c;
+    color: #eee;
+}
+/* services */
+#Services{
+    background: #f7f7f7;
+    padding: 100px 0;
+    padding-bottom: 70px !important;
+}
+.main-title{
+    margin-bottom: 80px;
+    text-align: center;
+}
+.main-title h3{
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+.main-title h3::after{
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-image: url(../img/dots.png);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.services-item {
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.services-item:hover .services-icon{
+    background: #1c1c1c;
+    color: #eee;
+}
+.services-icon{
+    font-size: 30px;
+    margin-bottom: 20px !important;
+    width: 70px;
+    height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all .5s;
+}
+.services-content h6{
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+.services-content p{
+    word-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #748182;
+}
+/* works */
+#Works{
+    padding: 100px 0;
+    padding-bottom: 70px !important;
+}
+.nav-pills .nav-link{
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+}
+.nav-pills .nav-link.active{
+    background-color: transparent;
+    color: #222;
+    position: relative;
+}
+.nav-pills .nav-link.active::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #111;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+}
+.work-item{
+    margin-bottom: 30px;
+}
+.work-shadow{
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all .5s;
+}
+.work-icons{
+    position: relative;
+    bottom:-5px;
+    transition: all .5s;
+}
+.work-icons a:hover span{
+    background: rgba(255, 255, 255, 0.95);
+    color: #111;
+}
+.work-info h6{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    transform: translateY(-15px);
+    transition: all .5s;
+}
+.work-icons span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+    position: relative;
+}
+.work-icons i{
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.work-item:hover .work-shadow{
+    opacity: 1;
+    transform: translateY(0);
+}
+.work-item:hover .work-info h6{
+    transform: translateY(0);
+}
+.work-item:hover .work-icons {
+    bottom: 0;
+}
+/* testimonial */
+#Clients{
+    background: #f7f7f7;
+    padding: 100px 0;
+}
+.client-img{
+   width: 90px;
+   height: 90px;
+}
+.client-feedback p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    word-spacing: 2px;
+}
+.client-feedback h6{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}
+.client-feedback span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.carousel-indicators [data-bs-target]{
+    margin: 10px 7px 0;
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-radius: 50%;
+    background: #869791;
+    transition: opacity .2s ease;
+}
+.carousel-indicators [data-bs-target]:hover{
+    background: #869791;
+    opacity: 1;
+}
+/* count */
+#count{
+    padding: 100px 0;
+    padding-bottom: 70px !important;
+}
+.count-icon i{
+    font-size: 30px;
+}
+.count-info h3{
+    font-weight: 900;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.count-info p{
+    line-height: 1.6;
+    font-size: 15px;
+    color: #748182;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+/* blog */
+#Blog{
+    background: #f7f7f7;
+    padding: 100px 0;
+}
+.blog-item{
+    box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+}
+.blog-info{
+    background: #fff;
+    padding: 30px 10px;
+}
+.blog-info h6{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 10px;
+}
+.blog-info h4{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.blog-info  a{
+    color:#343434;
+}
+.blog-info span{
+    border-bottom: 2px solid #333;
+}
+.blog-img img{
+    transition: all .5s;
+}
+.blog-img:hover img{
+    transform: scale(1.15);
+}
+/* contact */
+#Contact{
+    padding: 100px 0;
+}
+.contact-item{
+    margin-bottom: 30px;
+}
+.contact-icon{
+    font-size: 25px;
+    margin-bottom: 15px !important;
+    width: 60px;
+    height: 60px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all .5s;
+}
+.contact-item h6{
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.contact-item p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.contact-item:hover .contact-icon{
+    background: #1c1c1c;
+    color: #eee;
+}
+.contact-form input{
+    background: #f4f4f4;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px
+}
+.contact-form textarea{
+    height: 160px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+.form-button{
+    padding: 10px 40px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    background: #1c1c1c;
+    color: #eee;
+    transition: all .5s;
+}
+.form-button:hover{
+    background: transparent;
+    color: #343434;
+}
+/* footer */
+footer {
+    background: #1c1c1c;
+    padding: 30px;
+}
+footer p {
+    font-size: 13px;
+    word-spacing: 2px;
+    line-height: 1.6;
+    margin: 0;
+    color: #748182;
+}
+
